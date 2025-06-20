@@ -43,3 +43,8 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+
+SELECT k0, ROUND(AVG(c12)+ 0.001,2) AS "avg(c12)"
+FROM tbl1
+WHERE c13 > 400
+GROUP BY k0;
